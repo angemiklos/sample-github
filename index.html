@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            box-sizing : border-box;
+            margin-bottom : 10px;
+        }
+
+        #fn, #ln, #gender, #id {
+            display : block;
+            margin : auto 0;
+        }
+    </style>
+    <title>User Registration Form</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+      <script src="index.js"></script>
+</head>
+<body>
+    <form id="formId" action="" method="post">
+        <fieldset>
+            <legend>Registration Form</legend>
+            <label for="fn">First Name:</label>
+            <input id="fn" type="text" name="firstName">
+            <label for="ln">Last Name:</label>
+            <input id="ln" type="text" name="lastName">
+            <label for="gender">Gender:</label>
+            <div id="gender">
+                <input type="radio" id="choice1" name="gender" value="male">
+                <label for="choice1">Male</label>
+                <input type="radio" id="choice2" name="gender" value="female">                
+                <label for="choice2">Female</label>
+            </div>
+            <label for="id">Identification Docs</label>
+            <div id="id">
+                <input type="checkbox" name="docs" id="choicea" value="dl">
+                <label for="choicea">Drivers Licence</label>
+                <input type="checkbox" name="docs" id="choiceb" value="bc">
+                <label for="choiceb">Birth Certificate</label>
+                <input type="checkbox" name="docs" id="choicec" value="pp">                
+                <label for="choicec">Passport</label>
+            </div>
+            <input type="submit" name="submit">
+            <input type="reset" name="cancel">
+        </fieldset>
+    </form>
+    <div>
+        <img class="ltree" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpGyqAR_20eyHacs-xftvhGOTrzdAwLsMSKhgLp92iUH73ZuYp" height="300" width="300" alt="big tree">
+        <div class="treelist">
+            <a href="#" class="strees"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpGyqAR_20eyHacs-xftvhGOTrzdAwLsMSKhgLp92iUH73ZuYp" height="150" width="150" alt="deciduous tree"></a>
+            <a href="#" class="strees"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY1eYcBfVtOmkhzDRI1cB7bCr3ZXqjQKtjJ30mnV23gPdeQNX9TA" height="150" width="150" alt="evergreen tree"></a>
+            <a href="#" class="strees"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv22QdPtIq7CFK0g0u-RUO6ilKhHLZJgyWQlvbSm32N4nAtc--fg" height="150" width="150" alt="flowering tree"></a>
+        </div>
+    </div>
+</body>
+</html>
