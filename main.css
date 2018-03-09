@@ -1,0 +1,9 @@
+* {
+    box-sizing : border-box;
+    margin-bottom : 10px;
+}
+
+#fn, #ln, #gender, #id {
+    display : block;
+    margin : auto 0;
+}
